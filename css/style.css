@@ -1,0 +1,344 @@
+.label {
+  padding: 3px 10px;
+  line-height: 13px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  font-size: 75%;
+}
+
+.label-rounded {
+  border-radius: 60px;
+}
+
+.label-custom {
+  background-color: #01c0c8;
+}
+
+.label-success {
+  background-color: #00c292;
+}
+
+.label-info {
+  background-color: #03a9f3;
+}
+
+.label-warning {
+  background-color: #fec107;
+}
+
+.label-danger {
+  background-color: #e46a76;
+}
+
+.label-megna {
+  background-color: #01c0c8;
+}
+
+.label-primary {
+  background-color: #fb9678;
+}
+
+.label-purple {
+  background-color: #ab8ce4;
+}
+
+.label-red {
+  background-color: #e46a76;
+}
+
+.label-inverse {
+  background-color: #343a40;
+}
+
+.label-default {
+  background-color: #f8f9fa;
+}
+
+small,
+.small {
+  font-weight: 400;
+}
+.img-circle {
+  width: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 15px 0;
+}
+.hidden {
+  display: none;
+}
+
+/* Remove default checkbox styles */
+.toggle-switch-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style the toggle switch label */
+.toggle-switch-label {
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px; /* make the toggle button round */
+  background-color: #ddd;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Style the toggle switch dot */
+.toggle-switch-label::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.2s;
+}
+
+/* Move the toggle switch dot to the "on" position */
+.toggle-switch-checkbox:checked + .toggle-switch-label::after {
+  left: calc(100% - 23px);
+}
+
+/* Change the toggle switch background color when it's in the "on" position */
+.toggle-switch-checkbox:checked + .toggle-switch-label {
+  background-color: #4e73df;
+}
+
+/* Style the toggle switch label2 */
+.toggle-switch-checkbox2 {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch-label2 {
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px; /* make the toggle button round */
+  background-color: #ddd;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Style the toggle switch dot */
+.toggle-switch-label2::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.2s;
+}
+
+/* Move the toggle switch dot to the "on" position */
+.toggle-switch-checkbox2:checked + .toggle-switch-label2::after {
+  left: calc(100% - 23px);
+}
+
+/* Change the toggle switch background color when it's in the "on" position */
+.toggle-switch-checkbox2:checked + .toggle-switch-label2 {
+  background-color: #4e73df;
+}
+
+/* ===================================scoresheet table =============================== */
+/* table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+} */
+
+.scoresheet_th {
+  /* text-orientation: sideways-left; */
+  writing-mode: vertical-lr;
+
+  /* border-bottom: 1px solid #ddd; */
+  /* 
+  vertical-align: left; */
+  text-align: center;
+
+  transform: rotate(-180deg);
+  margin-left: 25px;
+  margin-bottom: 20px;
+  transform-origin: left;
+}
+.report_card_score_th {
+  /* text-orientation: sideways-left; */
+  writing-mode: vertical-lr;
+
+  /* border-bottom: 1px solid #ddd; */
+  /* 
+  vertical-align: left; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  transform: rotate(-180deg);
+  margin-left: 55px;
+
+  margin-bottom: 20px;
+  transform-origin: left;
+}
+
+/* ===================================scoresheet table =============================== */
+
+.form-check-input[type="radio"] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* ============== REPORT CARD CSS ==================  */
+@page {
+  size: A4;
+  margin: 0;
+}
+/* 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+} */
+
+.reportcardheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 200px; */
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+.student_profile {
+  /* box-sizing: border-box; */
+  /* 
+  border-bottom: 1px solid black; */
+}
+.score_group {
+  border-bottom: 1px solid black;
+}
+.term_details {
+  /* box-sizing: border-box; */
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-bottom: 1rem;
+}
+.school-logo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+.school-name-address {
+  /* flex: 1; */
+  text-align: center;
+  /* padding-top: 5rem; */
+}
+
+.student-passport {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-left: 10px;
+}
+
+.content {
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content th,
+.content td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+.subject_th {
+  text-align: left !important;
+}
+.content th {
+  /* background-color: #ccc; */
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.print-button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media print {
+  #printBtn {
+    display: none;
+  }
+}
+.nav-pills {
+  gap: 0.5rem;
+}
+.questions {
+  display: none;
+}
+/* Hide the default radio button */
+/* input[type="radio"] {
+  display: none;
+} */
+
+/* Style the custom radio button */
+
+/* Create the radio button circle */
+.custom-radio {
+  content: "";
+
+  width: 10px; /* Adjust as needed */
+  height: 10px; /* Adjust as needed */
+}
+.custom-radio-question {
+  content: "";
+
+  width: 23px; /* Adjust as needed */
+  height: 23px; /* Adjust as needed */
+}
+
+/* Style the radio button when it's checked */

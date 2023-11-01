@@ -1,0 +1,10 @@
+<?php
+require_once('functions.php');
+require_once('app_config.php');
+require_once('database.php');
+require_once('student_class.php');
+require_once('user_class.php');
+require_once('sessions.php');
+require_once('global_class.php');
+require_once('employee_class.php');
+require_once('guardian_class.php');
